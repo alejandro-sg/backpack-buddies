@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-import Map from './Map';
+import Main from './Main';
 
 export default class App extends React.Component {
   constructor(props) {
@@ -13,7 +13,7 @@ export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Map/>
+        <Main/>
       </View>
     );
   }
@@ -21,9 +21,8 @@ export default class App extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    display: 'flex',
+    alignItems:'center',
+    paddingTop: 15,
   },
 });
